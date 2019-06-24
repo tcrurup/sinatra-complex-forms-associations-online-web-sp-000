@@ -7,5 +7,6 @@ class Owner < ActiveRecord::Base
       str += '|' unless str == ""
       str += " #{pet.name} "
     end
+    str
   end
 end
