@@ -1,1 +1,23 @@
-index.erb
+<style>
+  td,th{
+    padding: 2px 10px;
+    text-align: center;
+  }
+</style>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Owner</th>
+  </tr>
+  
+  <%@pets.each do |pet|%>
+    <tr>
+      <td><%=pet.id%></td>
+      <td><%=pet.name%></td>
+      <td><%=pet.owner_name%></td>
+    </tr>
+  <% end %>
+  
+</table>
