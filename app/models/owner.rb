@@ -6,5 +6,6 @@ class Owner < ActiveRecord::Base
     self.pets.each do |pet|
       str += "|  #{pet.name}"
     end
+    str
   end
 end
