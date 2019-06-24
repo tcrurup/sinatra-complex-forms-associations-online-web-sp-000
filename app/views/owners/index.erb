@@ -17,6 +17,9 @@
       <td><%=owner.id%></td>
       <td><%=owner.name%></td>
       <td><%=owner.show_pets_as_string%></td>
+      <td>
+        <form action="/owners/<%=owner.id%>/edit" method='get'><input type='submit' value='EDIT'></form>
+      </td>
     </tr>
   <% end %>
   
