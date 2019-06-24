@@ -1,3 +1,16 @@
-<%@pets.each do |pet|%>
-  <%=pet.id%>| Name: <%=pet.name%>, Owner: <%=pet.owner_name%><br>
-<% end %>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Owner</th>
+  </tr>
+  
+  <%@pets.each do |pet|%>
+    <tr>
+      <td><%=pet.id%></td>
+    </tr>
+  
+  | Name: <%=pet.name%>, Owner: <%=pet.owner_name%><br>
+  <% end %>
+  
+</table>
