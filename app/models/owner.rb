@@ -4,7 +4,7 @@ class Owner < ActiveRecord::Base
   def show_pets_as_string
     str = String.new
     self.pets.each do |pet|
-      str += "|  #{pet.name}"
+      str += "|  #{pet.name}  "
     end
     str
   end
