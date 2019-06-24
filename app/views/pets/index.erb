@@ -19,7 +19,7 @@
       <td><%=pet.name%></td>
       <td><%=pet.owner_name%></td>
       <td>
-        <form action="/pets/<%=pet.id%>/edit":
+        <form action="/pets/<%=pet.id%>/edit" method='get'><input type='submit' value='EDIT'></form>
       </td>
     </tr>
   <% end %>
