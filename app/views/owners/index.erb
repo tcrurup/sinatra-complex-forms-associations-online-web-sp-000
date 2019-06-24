@@ -9,14 +9,14 @@
   <tr>
     <th>ID</th>
     <th>Name</th>
-    <th>Owner</th>
+    <th>Pets</th>
   </tr>
   
-  <%@pets.each do |pet|%>
+  <%@owners.each do |owner|%>
     <tr>
-      <td><%=pet.id%></td>
-      <td><%=pet.name%></td>
-      <td><%=pet.owner_name%></td>
+      <td><%=owner.id%></td>
+      <td><%=owner.name%></td>
+      <td><%=owner.show_pets%></td>
     </tr>
   <% end %>
   
