@@ -8,9 +8,9 @@
   <%@pets.each do |pet|%>
     <tr>
       <td><%=pet.id%></td>
+      <td><%=pet.name%></td>
+      <td><%=pet.owner_name%></td>
     </tr>
-  
-  | Name: <%=pet.name%>, Owner: <%=pet.owner_name%><br>
   <% end %>
   
 </table>
